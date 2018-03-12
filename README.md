@@ -21,7 +21,20 @@ This is a library for interacting with the Sigfox rest API.
 * https://github.com/hecko/pySigfox
 
 
-
+#### Jupyter
+Interact with the LpY via a Jupyter notebook:
+* https://github.com/adafruit/jupyter_micropython_kernel
+In `kernel.json` I have:
+```json
+{
+ "argv": ["python3",
+          "-m", "jupyter_micropython_kernel",
+          "/dev/cu.usbmodemPy343431", "115200",
+          "-f", "{connection_file}"],
+ "display_name": "MicroPython",
+ "language": "micropython"
+}
+```
 
 
 <p align="center">
